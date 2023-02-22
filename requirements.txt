@@ -1,0 +1,9 @@
+numpy==1.21.4
+scipy==1.10.0.dev0
+shapely==1.8.5.post1
+seaborn==0.11.1
+line_profiler==3.2.0
+sklearn
+pingouin
+jupyterlab
+pyreadstat==1.2.0

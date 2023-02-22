@@ -1,0 +1,202 @@
+        
+# DATASET ACTIVATE DataSet1.
+# GLM successful_count_C_bal_E successful_count_C_bal_FB successful_count_G_bal_E 
+#     successful_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=Success
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE ETASQ 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+
+
+    
+# DATASET ACTIVATE DataSet1.
+# GLM goal_color_split_count_C_bal_E goal_color_split_count_C_bal_FB goal_color_split_count_G_bal_E 
+#     goal_color_split_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=Polarization 
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE ETASQ
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+
+# DATASET ACTIVATE DataSet1.
+# GLM fairness_count_C_bal_E fairness_count_C_bal_FB fairness_count_G_bal_E 
+#     fairness_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=Fairness
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE ETASQ
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+# DATASET ACTIVATE DataSet1.
+# GLM spatial_heat_index_count_C_bal_E spatial_heat_index_count_C_bal_FB spatial_heat_index_count_G_bal_E 
+#     spatial_heat_index_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=SpatialPolarization 
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+
+    
+# DATASET ACTIVATE DataSet1.
+# GLM first_mover_time_count_C_bal_E first_mover_time_count_C_bal_FB first_mover_time_count_G_bal_E 
+#     first_mover_time_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=FirstMover
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+
+    
+# DATASET ACTIVATE DataSet1.
+# GLM theta_diff_count_C_bal_E theta_diff_count_C_bal_FB theta_diff_count_G_bal_E 
+#     theta_diff_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=AngularSeparation
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+    
+# DATASET ACTIVATE DataSet1.
+# GLM mean_dist_count_C_bal_E mean_dist_count_C_bal_FB mean_dist_count_G_bal_E 
+#     mean_dist_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=PlayerDistance
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+
+# DATASET ACTIVATE DataSet1.
+# GLM move_balance_count_C_bal_E move_balance_count_C_bal_FB move_balance_count_G_bal_E 
+#     move_balance_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=MoveBalance
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+    
+# DATASET ACTIVATE DataSet1.
+# GLM second_mover_delay_count_C_bal_E second_mover_delay_count_C_bal_FB second_mover_delay_count_G_bal_E 
+#     second_mover_delay_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=SecondMoverDelay
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+# DATASET ACTIVATE DataSet1.
+# GLM ct_polarization_count_C_bal_E ct_polarization_count_C_bal_FB ct_polarization_count_G_bal_E 
+#     ct_polarization_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=CrossTrialPolarization
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+# DATASET ACTIVATE DataSet1.
+# GLM ct_spatial_polarization_count_C_bal_E ct_spatial_polarization_count_C_bal_FB ct_spatial_polarization_count_G_bal_E 
+#     ct_spatial_polarization_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=SpatialConsistency 
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+
+# DATASET ACTIVATE DataSet1.
+# GLM ct_move_time_r_count_C_bal_E ct_move_time_r_count_C_bal_FB ct_move_time_r_count_G_bal_E 
+#     ct_move_time_r_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=MoveTimePearsonR 
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+
+# DATASET ACTIVATE DataSet1.
+# GLM ave_gem_diag_count_C_bal_E ave_gem_diag_count_C_bal_FB ave_gem_diag_count_G_bal_E 
+#     ave_gem_diag_count_G_bal_FB BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=GemForagingSize
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+# DATASET ACTIVATE DataSet1.
+# GLM successful_count_C_bal_E_h2 successful_count_C_bal_FB_h2 successful_count_G_bal_E_h2 
+#     successful_count_G_bal_FB_h2 BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=SuccessH2
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+# DATASET ACTIVATE DataSet1.
+# GLM goal_color_split_count_C_bal_E_h2 goal_color_split_count_C_bal_FB_h2 goal_color_split_count_G_bal_E_h2 
+#     goal_color_split_count_G_bal_FB_h2 BY group
+#   /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+#   /MEASURE=PolarizationH2
+#   /METHOD=SSTYPE(3)
+#   /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+#   /PRINT=DESCRIPTIVE 
+#   /CRITERIA=ALPHA(.05)
+#   /WSDESIGN=counter balance counter*balance
+#   /DESIGN=group.
+    
+
+DATASET ACTIVATE DataSet1.
+GLM score_count_C_bal_E score_count_C_bal_FB score_count_G_bal_E 
+    score_count_G_bal_FB BY group
+  /WSFACTOR=counter 2 Polynomial balance 2 Polynomial 
+  /MEASURE=Score
+  /METHOD=SSTYPE(3)
+  /PLOT=PROFILE(balance*counter*group) TYPE=LINE ERRORBAR=CI MEANREFERENCE=NO YAXIS=AUTO
+  /PRINT=DESCRIPTIVE ETASQ 
+  /CRITERIA=ALPHA(.05)
+  /WSDESIGN=counter balance counter*balance
+  /DESIGN=group.
