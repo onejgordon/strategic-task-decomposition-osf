@@ -1,10 +1,5 @@
 # Materials for "Strategic task decomposition in joint action" (Cognitive Science, 2023)
 
-Authors:
-Jeremy Gordon; Guenther Knoblich; Giovanni Pezzulo
-
-See OSF project record [here](https://osf.io/db32m/).
-
 ## Manifest
 
 * Pandas data frames are in the `data/` directory.
